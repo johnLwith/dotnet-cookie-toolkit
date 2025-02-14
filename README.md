@@ -1,4 +1,4 @@
-# Dotnet.DeCookie
+# Dotnet.DeCookie 🍪
 
 A .NET global tool for decrypting ASP.NET Core cookies.
 
