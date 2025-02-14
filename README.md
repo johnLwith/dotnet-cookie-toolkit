@@ -35,6 +35,12 @@ dotnet-decookie --cookie "your_cookie_value" --app-name "YourAppName"
 dotnet-decookie --cookie "your_cookie_value" --key "/path/to/key.xml" --app-name "YourAppName"
 ```
 
+The key file is typically found in:
+- Windows: `%LOCALAPPDATA%\ASP.NET\DataProtection-Keys`
+- Linux: `~/.aspnet/DataProtection-Keys`
+- macOS: `/Users/your_user/.aspnet/DataProtection-Keys`
+
+
 ### Application Name
 The application name is required and must match the one used by your ASP.NET Core application for data protection. This ensures that the tool can correctly decrypt cookies created by your application.
 
@@ -43,10 +49,6 @@ The application name is required and must match the one used by your ASP.NET Cor
 dotnet-decookie --cookie "your_cookie_value" --key "/path/to/key.xml" --app-name "YourAppName"
 ```
 
-The key file is typically found in:
-- Windows: `%LOCALAPPDATA%\ASP.NET\DataProtection-Keys`
-- Linux: `~/.aspnet/DataProtection-Keys`
-- macOS: `/Users/your_user/.aspnet/DataProtection-Keys`
 
 ## Sample Project
 
