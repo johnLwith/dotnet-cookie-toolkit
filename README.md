@@ -48,16 +48,6 @@ The key file is typically found in:
 - Linux: `~/.aspnet/DataProtection-Keys`
 - macOS: `/Users/your_user/.aspnet/DataProtection-Keys`
 
-## Examples
-
-```bash
-# Decode a cookie
-dotnet-decookie --cookie "CfDJ8ICLxGAm..."
-
-# Decrypt a cookie with a key
-dotnet-decookie --cookie "CfDJ8ICLxGAm..." --key "/path/to/key.xml"
-```
-
 ## Sample Project
 
 A sample ASP.NET Core project is included in the `samples/CookieSample` directory. This project demonstrates:
